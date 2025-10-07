@@ -27,7 +27,7 @@ function App() {
   }
 
   const handleDown = (idx)=>{
-      if(idx<list.length){
+      if(idx<list.length-1){
         const ulist = [...list];
         [ulist[idx+1],ulist[idx]]=[ulist[idx],ulist[idx+1]];
         setList(ulist)
