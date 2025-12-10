@@ -1,19 +1,26 @@
-
+body{
+  margin:0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, black 50%, white 50%);
+}
 .block {
   max-width: 300px;
-  margin: 100px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+  margin-top: 200px;
+  padding: 40px;
+  border: 2px groove #1fc1be;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fafafa;
+  background-color: black;
 }
 
 .name {
+  padding-top: 10px;
   font-size: 16px;
   font-weight: 500;
-  color: #333;
+  color: #3cc6a8;
   margin-bottom: 5px;
   display: block;
 }
