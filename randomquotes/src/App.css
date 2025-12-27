@@ -1,56 +1,66 @@
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+/* Global reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-#root {
-  text-align: center;
-  width: 90%;
-  max-width: 600px;
+/* Page background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f4f7;
 }
 
-
-p {
+/* Main quotes wrapper */
+.quotes-wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
   background: #ffffff;
-  margin: 12px 0;
-  padding: 16px;
-  border-radius: 20px;
-  border: 2px solid rgb(13, 133, 203);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
-  line-height: 1.5;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual quote */
+.quote-text {
+  font-size: 1.1rem;
   color: #333;
-  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  border-left: 4px solid #1976d2;
+  line-height: 1.6;
 }
 
-
-p:hover {
-  transform: scale(1.02);
-  color:black;
-  background: #f0f8ff;
-  font-weight: bolder;
-}
-
-
-button {
-  background-color: #ba10a0;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
+/* Button styling */
+.get-quotes-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 28px;
   font-size: 1rem;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
   cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+.get-quotes-btn:hover {
+  background-color: #115293;
+  transform: translateY(-2px);
+}
 
-button:hover {
-  background-color: #fe03b3;
+.get-quotes-btn:active {
+  transform: scale(0.97);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .quotes-wrapper {
+    margin: 20px;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
 }

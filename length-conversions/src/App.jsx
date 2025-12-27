@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import ResponsiveNavbar from './navbar';
 
 function App() {
   const [kg, setKg] = useState("");
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <>
+    <ResponsiveNavbar/>
       <div className='block'>
         <label htmlFor='Enter' className='name'>Kilograms</label><br />
         <input type='number' placeholder='1kg -> 2.20lb' value={kg} onChange={ConvertToLb} required /><br />

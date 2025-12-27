@@ -1,43 +1,68 @@
-body{
-  margin:0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, black 50%, white 50%);
+/* Reset & body styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #eeeeee;
 }
+
+/* Converter container */
 .block {
-  max-width: 300px;
-  margin-top: 200px;
-  padding: 40px;
-  border: 2px groove #1fc1be;
-  border-radius: 10px;
-  text-align: center;
-  background-color: black;
+  max-width: 400px;
+  margin: 100px auto 50px; /* Leave space for navbar */
+  padding: 30px 40px;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  border: 2px solid #00adb5;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s ease;
 }
 
+.block:hover {
+  transform: scale(1.03);
+}
+
+/* Labels */
 .name {
-  padding-top: 10px;
-  font-size: 16px;
   font-weight: 500;
-  color: #3cc6a8;
   margin-bottom: 5px;
-  display: block;
+  color: #00adb5;
+  font-size: 1rem;
 }
 
-input {
-  width: 90%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #bbb;
-  border-radius: 6px;
+/* Inputs */
+.block input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #272727;
+  color: #eeeeee;
+  font-size: 1rem;
   outline: none;
-  font-size: 15px;
-  transition: border 0.2s ease-in;
+  transition: all 0.3s ease;
 }
 
-input:focus {
-  border: 1px solid #007bff;
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+.block input:focus {
+  border-color: #00adb5;
+  box-shadow: 0 0 8px #00adb5;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .block {
+    margin: 80px 20px;
+    padding: 20px 25px;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .block input {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+}
