@@ -2,22 +2,22 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #121212;
+  background-color: #edeffb;
   color: #eeeeee;
 }
 
 /* Converter container */
 .block {
   max-width: 400px;
-  margin: 100px auto 50px; /* Leave space for navbar */
+  margin: 50px auto 50px; /* Leave space for navbar */
   padding: 30px 40px;
-  background-color: #1e1e1e;
+  background-color: #394d5e;
   border-radius: 16px;
-  border: 2px solid #00adb5;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  border: 2px solid #024448;
+  box-shadow: 0 8px 20px rgba(67, 55, 102, 0.5);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   transition: transform 0.3s ease;
 }
 
@@ -27,15 +27,14 @@ body {
 
 /* Labels */
 .name {
-  font-weight: 500;
-  margin-bottom: 5px;
-  color: #00adb5;
+  font-weight: 800;
+  color: #ecf4fe;
   font-size: 1rem;
 }
 
 /* Inputs */
 .block input {
-  padding: 12px 15px;
+  padding: 15px 15px;
   border-radius: 8px;
   border: 1px solid #444;
   background-color: #272727;
