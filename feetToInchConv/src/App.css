@@ -1,0 +1,77 @@
+/* Reset + base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #a7a7a6, #dcdcdc);
+  min-height: 100vh;
+}
+
+/* Converter card */
+.block {
+  background-color: #f8f8f8;
+  width: 360px;
+  margin: 80px auto;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Label styling */
+.block label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Number input */
+.block input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.block input[type="number"]:focus {
+  outline: none;
+  border-color: #0d8282;
+}
+
+/* Radio button container */
+.block label input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Radio label alignment */
+.block label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Result display */
+.block h1 {
+  margin-top: 20px;
+  text-align: center;
+  color: #117c7c;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .block {
+    width: 90%;
+    margin: 60px auto;
+  }
+}
