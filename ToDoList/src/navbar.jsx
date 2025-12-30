@@ -8,7 +8,7 @@ import logo from './assets/logo.png';
 
 function ResponsiveNavbar() {
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{background: 'linear-gradient(177deg,rgba(250, 250, 250, 1) 0%, rgba(255, 245, 245, 1) 36%, rgba(255, 228, 214, 1) 75%)'}}>
       <Container maxWidth="xl">
         <Toolbar sx={{ position: 'relative' }}>
           
@@ -26,6 +26,7 @@ function ResponsiveNavbar() {
           <Typography
             variant="h4"
             sx={{
+              color: '#85030cff',
               position: 'absolute',
               left: '50%',
               transform: 'translateX(-50%)',
