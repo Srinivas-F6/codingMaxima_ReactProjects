@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import logo from './assets/logo.png';
 
-
 function ResponsiveNavbar() {
   return (
     <AppBar position="static">
@@ -34,7 +33,7 @@ function ResponsiveNavbar() {
               letterSpacing: '0.1rem',
             }}
           >
-            Random Quotes
+            Feet/CM to Inch
           </Typography>
 
         </Toolbar>

@@ -17,7 +17,6 @@ function App() {
   return (
     <>
       <ResponsiveNavbar />
-
       <div className="quotes-wrapper">
         {quote.length > 0 &&
           quote.map((val, idx) => (
