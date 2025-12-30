@@ -8,7 +8,7 @@
 /* Page background */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f2f4f7;
+  background: linear-gradient(351deg,rgba(250, 250, 250, 1) 0%, rgb(238, 242, 251) 36%, rgb(230, 243, 244) 75%);
 }
 
 /* Main quotes wrapper */
